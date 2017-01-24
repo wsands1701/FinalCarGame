@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/fastFont.spritefont</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/crash.wav</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/car_start.wav</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/losing_sound.wav</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/menuMusic.wav</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/ChooseColor.png</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/end.png</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/help.png</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/play.png</File>
+    <File>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/titlefont.spritefont</File>
+  </SourceFiles>
+</SourceFileCollection>
