@@ -66,7 +66,8 @@ namespace CarGame
         //time variables
         TimeSpan t1 = new TimeSpan(0, 0, 0);
 
-        int points = 0;
+        double highscore = 0;
+        int attempts = 0;
 
         int r = 250;
         int g = 250;
@@ -545,49 +546,62 @@ namespace CarGame
 
             if (playerRectangle.Intersects(Lane1)&&t1.TotalSeconds>2)
             {
+                        attempts += 1;
                         state = GameState.EndEndGame;
-            }
+                        
+                    }
              if (playerRectangle.Intersects(Lane1b) && t1.TotalSeconds > 2)
             {
+                        attempts += 1;
                         state = GameState.EndEndGame;
+                        
                     }
             if (playerRectangle.Intersects(Lane2) && t1.TotalSeconds > 2)
             {
+                        attempts += 1;
                         state = GameState.EndEndGame;
             }
              if (playerRectangle.Intersects(Lane4b) && t1.TotalSeconds > 2)
             {
+                        attempts += 1;
                         state = GameState.EndEndGame;
             }
             if (playerRectangle.Intersects(Lane3) && t1.TotalSeconds > 2)
             {
+                        attempts += 1;
                         state = GameState.EndEndGame;
             }
             if (playerRectangle.Intersects(Lane4) && t1.TotalSeconds > 2)
             {
+                        attempts += 1;
                         state = GameState.EndEndGame;
             }
 
             
             if (playerRectangle.Intersects(treeRectangle1) && t1.TotalSeconds > 2)
             {
-                state = GameState.EndEndGame;
+                        attempts += 1;
+                        state = GameState.EndEndGame;
             }
             if (playerRectangle.Intersects(treeRectangle2) && t1.TotalSeconds > 2)
             {
-                state = GameState.EndEndGame;
+                        attempts += 1;
+                        state = GameState.EndEndGame;
             }
             if (playerRectangle.Intersects(treeRectangle3) && t1.TotalSeconds > 2)
             {
-                state = GameState.EndEndGame;
+                        attempts += 1;
+                        state = GameState.EndEndGame;
             }
             if (playerRectangle.Intersects(treeRectangle4) && t1.TotalSeconds > 2)
             {
-                state = GameState.EndEndGame;
+                        attempts += 1;
+                        state = GameState.EndEndGame;
             }
             if (playerRectangle.Intersects(treeRectangle5) && t1.TotalSeconds > 2)
             {
-                state = GameState.EndEndGame;
+                        attempts += 1;
+                        state = GameState.EndEndGame;
             }
                    
             
@@ -745,7 +759,17 @@ namespace CarGame
             spriteBatch.Draw(blueCar, Lane4b, Color.White);
             spriteBatch.Draw(blueCarL, Lane1b, Color.White);
 
-            spriteBatch.DrawString(font, "Points: " + t1.TotalSeconds.ToString("####.##"), new Vector2(1000, 25), Color.White);
+            //highscore and points
+            spriteBatch.DrawString(titlefont, "Points: " + t1.TotalSeconds.ToString("####.##"), new Vector2(975, 25), Color.White);
+            spriteBatch.DrawString(titlefont, "Attempts: " + attempts, new Vector2(75, 25), Color.White);
+            if (t1.TotalSeconds<highscore)
+            {
+                spriteBatch.DrawString(titlefont, "High Score: " + highscore.ToString("####.##"), new Vector2(475, 25), Color.White);
+            }
+            if (t1.TotalSeconds > highscore)
+            {
+                spriteBatch.DrawString(titlefont, "High Score: " + t1.TotalSeconds.ToString("####.##"), new Vector2(475, 25), Color.Red);
+            }
         }
         public void DisplayHelpScreen()
         {
@@ -772,8 +796,19 @@ namespace CarGame
 
         public void DisplayEndEndGame()
         {
+
+            
             double endtime = t1.TotalSeconds;
-            spriteBatch.DrawString(titlefont, "Your Score: " + endtime.ToString("####.##"), new Vector2(100, 100), Color.White);
+            if(endtime>highscore)
+            {
+                highscore = endtime;
+            }
+            spriteBatch.DrawString(titlefont, "Attempts: " + attempts, new Vector2(100, 100), Color.White);
+            spriteBatch.DrawString(titlefont, "Your Score: " + endtime.ToString("####.##"), new Vector2(100, 300), Color.White);
+            spriteBatch.DrawString(titlefont, "High Score: " + highscore.ToString("####.##"), new Vector2(100, 500), Color.White);
+            
+            
+
             spriteBatch.Draw(end, endRectangle, Color.White);
             spriteBatch.Draw(play, playRectangle2, Color.White);
         }
