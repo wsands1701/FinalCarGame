@@ -534,12 +534,12 @@ namespace CarGame
                     double x = t1.TotalSeconds;
 
             // make the cars move
-            Lane4.X += speedoflines + (int)(.06*x) + 1;
-            Lane4b.X += speedoflines + (int)(.06*x)+1;
-            Lane3.X += speedoflines + (int)(.08*x) +1;
-            Lane2.X -= speedoflines + (int)(.07*x)+2;
-            Lane1.X -= speedoflines + (int)(.06*x)+1;
-            Lane1b.X -= speedoflines + (int)(.06*x)+1;
+            Lane4.X += speedoflines + (int)(.03*x) + 1;
+            Lane4b.X += speedoflines + (int)(.02*x)+1;
+            Lane3.X += speedoflines + (int)(.04*x) +1;
+            Lane2.X -= speedoflines + (int)(.025*x)+2;
+            Lane1.X -= speedoflines + (int)(.03*x)+1;
+            Lane1b.X -= speedoflines + (int)(.03*x)+1;
 
 
 
@@ -750,7 +750,7 @@ namespace CarGame
         public void DisplayHelpScreen()
         {
             GraphicsDevice.Clear(Color.Black);
-            spriteBatch.DrawString(font, "\n-To move your car, click and hold the left mouse button and drag the mouse wherever you want the car to go.\n-Avoid obsticles traveling towards your car for the longest time to win!\n-Click the 'Play' button to start game.\n-To quit, click the 'End' button. \n-To change the color of the car, click the 'Choose Color' button. \n -Once you press play, you have two seconds to move your car before you can crash again", new Vector2(50, 100), Color.White);
+            spriteBatch.DrawString(font, "\n-To move your car, click and hold the left mouse button and drag the mouse wherever you want the car to go.\n-Avoid obsticles traveling towards your car for the longest time to win!\n-Click the 'Play' button in to start game.\n-To quit, click the 'End' button. \n-To change the color of the car, click the 'Choose Color' button. \n -Once you press play, you have two seconds to move your car before you can crash again", new Vector2(50, 100), Color.White);
             spriteBatch.Draw(back, backRectangle, Color.White);
             
         }
