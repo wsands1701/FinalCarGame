@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/titlefont.spritefont</SourceFile>
-  <SourceTime>2017-01-13T14:18:25.8953109-05:00</SourceTime>
-  <DestFile>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/bin/Windows/titlefont.xnb</DestFile>
-  <DestTime>2017-01-24T12:48:49.0406322-05:00</DestTime>
+  <SourceFile>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/titlefont.spritefont</SourceFile>
+  <SourceTime>2017-01-24T13:03:02.7514079-05:00</SourceTime>
+  <DestFile>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/bin/Windows/titlefont.xnb</DestFile>
+  <DestTime>2017-01-24T13:03:52.8962918-05:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2016-03-30T02:36:08-04:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
