@@ -55,7 +55,9 @@ namespace CarGame
         Rectangle Lane3;
         Rectangle Lane4;
         Rectangle Lane4b;
-        
+
+        double endtime;
+
         Scrollingbackground road1;
         Scrollingbackground road2;
 
@@ -74,7 +76,7 @@ namespace CarGame
         int b = 250;
         Color plCl;
 
-        int speedoflines = 7;
+        int speedoflines = 3;
 
         Point newMousePoint;
         Point oldMousePoint = new Point();
@@ -535,16 +537,16 @@ namespace CarGame
                     double x = t1.TotalSeconds;
 
             // make the cars move
-            Lane4.X += speedoflines + (int)(.06*x) + 1;
-            Lane4b.X += speedoflines + (int)(.06*x)+1;
-            Lane3.X += speedoflines + (int)(.08*x) +1;
-            Lane2.X -= speedoflines + (int)(.07*x)+2;
-            Lane1.X -= speedoflines + (int)(.06*x)+1;
-            Lane1b.X -= speedoflines + (int)(.06*x)+1;
+            Lane4.X += speedoflines  + (int)(.06*x) + 1;
+            Lane4b.X += speedoflines  + (int)(.06*x)+1;
+            Lane3.X += speedoflines  + (int)(.08*x) +1;
+            Lane2.X -= speedoflines  + (int)(.07*x)+2;
+            Lane1.X -= speedoflines  + (int)(.06*x)+1;
+            Lane1b.X -= speedoflines  + (int)(.06*x)+1;
 
 
 
-            if (playerRectangle.Intersects(Lane1)&&t1.TotalSeconds>2)
+            if (playerRectangle.Intersects(Lane1)&&t1.TotalSeconds>10)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
@@ -561,7 +563,7 @@ namespace CarGame
                         attempts += 1;
                         state = GameState.EndEndGame;
             }
-             if (playerRectangle.Intersects(Lane4b) && t1.TotalSeconds > 2)
+             if (playerRectangle.Intersects(Lane4b) && t1.TotalSeconds > 10)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
@@ -750,13 +752,17 @@ namespace CarGame
             spriteBatch.Draw(tree, treeRectangle4, Color.White);
             spriteBatch.Draw(tree, treeRectangle5, Color.White);
             spriteBatch.Draw(whiteCar, playerRectangle, plCl);
-            
+
             //cars
-            spriteBatch.Draw(blueCarL, Lane1, Color.White);
+            if (endtime > 10)
+            {
+                spriteBatch.Draw(blueCarL, Lane1, Color.White);
+                spriteBatch.Draw(blueCar, Lane4b, Color.White);
+            }
+
             spriteBatch.Draw(blueCarL, Lane2, Color.White);
             spriteBatch.Draw(blueCar, Lane3, Color.White);
             spriteBatch.Draw(blueCar, Lane4, Color.White);
-            spriteBatch.Draw(blueCar, Lane4b, Color.White);
             spriteBatch.Draw(blueCarL, Lane1b, Color.White);
 
             //highscore and points
@@ -798,7 +804,7 @@ namespace CarGame
         {
 
             
-            double endtime = t1.TotalSeconds;
+            endtime = t1.TotalSeconds;
             if(endtime>highscore)
             {
                 highscore = endtime;

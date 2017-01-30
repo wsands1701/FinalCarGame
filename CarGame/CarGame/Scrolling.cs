@@ -30,7 +30,7 @@ namespace CarGame
 
         public void Update()
         {
-            rectangle.X -= 7;
+            rectangle.X -= 3;
         }
     }
 }
