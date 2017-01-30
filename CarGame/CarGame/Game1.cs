@@ -48,6 +48,19 @@ namespace CarGame
         Rectangle treeRectangle5;
         Rectangle picRectangle;
 
+        //collision rectz
+        Rectangle plyrcar;
+        Rectangle bluecar1;
+        Rectangle bluecar2;
+        Rectangle bluecar3;
+        Rectangle bluecar4;
+        Rectangle tree1;
+        Rectangle tree2;
+        Rectangle tree3;
+        Rectangle tree4;
+        Rectangle tree5;
+          
+
         //lanes
         Rectangle Lane1;
         Rectangle Lane1b;
@@ -164,6 +177,9 @@ namespace CarGame
             // TODO: Add your initialization logic here
             IsMouseVisible = true;
 
+            //collision rectangles
+           
+
             //Road Lines
             line1Rectangle = new Rectangle(GraphicsDevice.Viewport.Width / 4, 260, 100, 15);
             line1Rectangle2 = new Rectangle(GraphicsDevice.Viewport.Width / 2, 260, 100, 15);
@@ -204,6 +220,17 @@ namespace CarGame
             Lane2 = new Rectangle(2000, 290, 170, 95);
             Lane1 = new Rectangle(2000, 150, 170, 95);
             Lane1b = new Rectangle(2050, 150, 170, 95);
+
+            //collision
+            plyrcar = new Rectangle(playerRectangle.X, playerRectangle.Y, 270/3, 130/3);
+ 
+           /* tree1 = new Rectangle(GraphicsDevice.Viewport.Width / 5, 700, 110, 90);
+            tree2 = new Rectangle(GraphicsDevice.Viewport.Width / 4, 700, 110, 90);
+            tree3 = new Rectangle(GraphicsDevice.Viewport.Width / 2, 700, 110, 90);
+            tree4 = new Rectangle((GraphicsDevice.Viewport.Width / 3) * 4, 700, 110, 90);
+            tree5 = new Rectangle(GraphicsDevice.Viewport.Width, 700, 110, 90);
+            */
+
             base.Initialize();
         }
 
@@ -405,7 +432,11 @@ namespace CarGame
 
                 case GameState.PlayGame:
                     Console.WriteLine(Mouse.GetState().X+" "+ Mouse.GetState().Y);
-                   
+                    plyrcar.X = playerRectangle.X + 20;
+                    plyrcar.Y = playerRectangle.Y +17;
+                
+
+                    
                     road1.Update();
                     road2.Update();
                     t1 += gameTime.ElapsedGameTime;
@@ -546,34 +577,34 @@ namespace CarGame
 
 
 
-            if (playerRectangle.Intersects(Lane1)&&t1.TotalSeconds>10)
+            if (plyrcar.Intersects(Lane1)&&t1.TotalSeconds>10)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
                         
                     }
-             if (playerRectangle.Intersects(Lane1b) && t1.TotalSeconds > 2)
+             if (plyrcar.Intersects(Lane1b) && t1.TotalSeconds > 2)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
                         
                     }
-            if (playerRectangle.Intersects(Lane2) && t1.TotalSeconds > 2)
+            if (plyrcar.Intersects(Lane2) && t1.TotalSeconds > 2)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
             }
-             if (playerRectangle.Intersects(Lane4b) && t1.TotalSeconds > 10)
+             if (plyrcar.Intersects(Lane4b) && t1.TotalSeconds > 10)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
             }
-            if (playerRectangle.Intersects(Lane3) && t1.TotalSeconds > 2)
+            if (plyrcar.Intersects(Lane3) && t1.TotalSeconds > 2)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
             }
-            if (playerRectangle.Intersects(Lane4) && t1.TotalSeconds > 2)
+            if (plyrcar.Intersects(Lane4) && t1.TotalSeconds > 2)
             {
                         attempts += 1;
                         state = GameState.EndEndGame;
@@ -752,6 +783,9 @@ namespace CarGame
             spriteBatch.Draw(tree, treeRectangle4, Color.White);
             spriteBatch.Draw(tree, treeRectangle5, Color.White);
             spriteBatch.Draw(whiteCar, playerRectangle, plCl);
+      
+
+
 
             //cars
             if (endtime > 10)

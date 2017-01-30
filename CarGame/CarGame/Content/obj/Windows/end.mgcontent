@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/end.png</SourceFile>
-  <SourceTime>2017-01-24T13:02:58.4359514-05:00</SourceTime>
-  <DestFile>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/bin/Windows/end.xnb</DestFile>
-  <DestTime>2017-01-26T14:07:06.9891622-05:00</DestTime>
+  <SourceFile>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/end.png</SourceFile>
+  <SourceTime>2017-01-11T13:33:06.0520404-05:00</SourceTime>
+  <DestFile>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/bin/Windows/end.xnb</DestFile>
+  <DestTime>2017-01-30T09:05:51.9017246-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T02:36:08-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

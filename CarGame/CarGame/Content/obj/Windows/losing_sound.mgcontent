@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/losing_sound.wav</SourceFile>
-  <SourceTime>2017-01-24T13:02:58.4672543-05:00</SourceTime>
-  <DestFile>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/bin/Windows/losing_sound.xnb</DestFile>
-  <DestTime>2017-01-26T14:07:03.3483748-05:00</DestTime>
+  <SourceFile>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/losing_sound.wav</SourceFile>
+  <SourceTime>2017-01-11T12:50:58.181103-05:00</SourceTime>
+  <DestFile>C:/Users/tyung/Desktop/FinalCarGame/CarGame/CarGame/Content/bin/Windows/losing_sound.xnb</DestFile>
+  <DestTime>2017-01-30T09:05:48.416893-05:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2016-03-30T02:36:08-04:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>
