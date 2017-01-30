@@ -4,15 +4,15 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/fastFont.spritefont</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/crash.wav</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/car_start.wav</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/losing_sound.wav</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/menuMusic.wav</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/ChooseColor.png</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/end.png</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/help.png</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/play.png</File>
-    <File>C:/Users/wsands/Source/Repos/FinalCarGame/CarGame/CarGame/Content/titlefont.spritefont</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/fastFont.spritefont</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/crash.wav</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/car_start.wav</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/losing_sound.wav</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/menuMusic.wav</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/ChooseColor.png</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/end.png</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/help.png</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/play.png</File>
+    <File>C:/Users/msanfilippo/Source/Repos/FinalCarGame/CarGame/CarGame/Content/titlefont.spritefont</File>
   </SourceFiles>
 </SourceFileCollection>
